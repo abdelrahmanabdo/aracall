@@ -1,0 +1,108 @@
+<!--
+  Generated template for the ProfilePage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header class="header_title">
+	
+		<div class="container">
+				  <div class="back_btn">
+					  <a href="#" (click)="back()"><img src="../../assets/images/svg/left-arrow-angle.svg" style="width:20px;height:20px;margin-left:40px;color: white;"/></a>
+				  </div>
+				  <div class="page_title text-center" >
+					  <h3 style=" font-size: 19px; ">Profile</h3>
+				  </div>
+  
+			  </div>
+			  
+	</ion-header>
+
+
+<ion-content>
+	<main class="page">
+		<!-- Start Menu Settings -->
+		<div class="settings">
+			
+			<div class="settings_items">
+				<div class="container">
+					<div class="account">
+							
+						<div class="">
+							<form action="#" method="post">
+									<div class="form-group mt-20 mb-15">
+											<!-- <label for="profile-upload" style="margin-bottom:10px">Profile picture </label> -->
+												<div class="file-input flex-v-center">
+													<img src={{user.avatar}} style="width:140px;margin:auto;" alt="">
+											  <!-- <label for="profile-upload" class="btn btn-theme btn-xs ml-20" style="padding: 1px 5px !important;">
+												  Change Picture
+											  </label> -->
+											  <input id="profile-upload" type="file" class="hide">
+											</div>
+										  </div>
+								<!-- <div class="form-group mb-15">
+									<label>First Name</label>
+									<input class="form-control" type="text" name="name" 	[(ngModel)]="user.first_name" placeholder="FIRST NAME" disabled>
+								</div>  -->
+								<!-- <div class="form-group mb-15">
+										<label>Last Name</label>
+										<input class="form-control" type="text" name="LAST NAME" [(ngModel)]="user.last_name" placeholder="LAST NAME" disabled>
+									</div> -->
+										<h1 style="text-align:center;font-size:22px">{{user.first_name }} {{ user.last_name}}</h1>
+										 <!-- //form-group -->
+								<!-- <div class="form-group mb-15">
+									<label>Email address</label>
+									<input class="form-control" type="text" name="email" [(ngModel)]="user.email_address" placeholder="info@info.com" disabled>
+								</div>  -->
+								<!-- <div class="form-group">
+									<label>PHONE NUMBER</label>
+									<input class="form-control" type="text" name="name" placeholder="01234567890" disabled>
+								</div>  -->
+								<!-- <div class="form-group">
+									<label>PASSWORD</label>
+									<input class="form-control" type="password" name="password" placeholder="*********">
+								</div>  -->
+								<div class="form-group mb-15">
+									<label for="status">Status</label><a href="#" (click)="changeStatus()" style="    padding: 4px 0px 2px 13px;									
+									margin-bottom: 10px;"  class="btn btn-theme btn-sm pull-right"><img src="../../assets/images/svg/edit.svg" class="mr-15" style="width:14px;height:14px"/></a>
+									<div class="clearfix"></div>
+									<textarea class="form-control" id="status" disabled>{{userStatus}}</textarea>
+									
+								</div>
+								<div class="form-group mb-15">
+									<label class="pull-left" for="online_status">Online Status</label>
+									<div class="ion-record pull-right" *ngIf="onlineStatus == 'online'" style="color:green;"> online</div>
+									<div class="ion-record pull-right"*ngIf="onlineStatus == 'busy'" style="color:red;"> busy</div>
+									<div class="ion-record pull-right" *ngIf="onlineStatus == 'invisible'" style="color:rgb(124, 124, 124);"> invisible</div>
+									
+									<select class="form-control" [(ngModel)]="newOnlineStatus" [ngModelOptions]="{standalone :true}" (change)="onChange(newOnlineStatus)"  id="online_status">
+										<option value='0'>Online</option>
+										<option value='1'>Busy</option>
+										<option value='2'>Invisible</option>
+									</select>
+								</div>
+								<!-- <div class="list-group list-group-theme">
+									<a class="list-group-item" href="#">
+										<h4 class="list-group-item-heading">Status</h4>
+									 <p class="list-group-item-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+								 </a>
+									<a class="list-group-item" href="#">
+										 <h4 class="list-group-item-heading">Online Status</h4>
+										<p class="list-group-item-text">online.</p>
+									</a>
+									
+								</div> -->
+								<div class="form-group mt-30 mb-30">
+									<input type="submit" (click)="Edit()" value="Edit Profile"  class="btn btn-theme">
+								</div> 
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+	</main>
+
+
+</ion-content>

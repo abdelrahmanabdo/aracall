@@ -1,0 +1,66 @@
+<!--
+  Generated template for the CreatgroupPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Create group</ion-title>
+  
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content>
+		<ion-searchbar type="text"  
+		
+		(ionInput)="onInput($event)"
+		></ion-searchbar>
+<form #userForm = "ngForm" (ngSubmit) ="onclick(userForm.value)">
+	<main class="page">
+		<div class="bg_color">
+			<!--<header class="nav text_center">
+				<nav class="navigation">
+					<ul>
+						<li><a href="groups.html" class="active"><i class="ion-ios-people"></i></a></li>
+						<li><a href="chats.html"><i class="ion-chatboxes"></i></a></li>
+						<li><a href="contacts.html"><i class="ion-android-list"></i></a></li>
+					</ul>
+				</nav>
+				<div class="search"><a href="#"><i class="ion-ios-search-strong"></i></a></div>
+				<div class="menu"><a href="#"><i class="ion-android-more-vertical"></i></a></div>
+			</header>-->
+			<div class="contacts">
+				<div class="container">
+					<div class="contact_item online" *ngFor="let p of friendsnames">
+						<div class="contact_img">
+							<img [src]="p.avatar" style="border-radius:50%" alt="Arab Call" title="Arab Call">
+						</div>
+						<div class="contact_info">
+							<h3>{{p.name}}</h3>
+						</div>
+            <ion-checkbox (ngModel)=p.name [name]="p.userid" ></ion-checkbox>
+					</div> <!-- //Contact Item -->
+	
+				</div>
+			</div>
+		</div>
+    <div class="typing">
+						<div class="message-box">
+							<div class="input-group">
+								<input type="text" class="form-control" placeholder="Type Message......" name="msg"  [(ngModel)]="message">
+								<span class="input-group-btn">
+									<button class="btn btn-default" type="submit" style="margin-top: -26px"><i class="ion-android-send"></i></button>
+								</span>
+							</div><!-- /input-group -->
+						</div>
+					</div>
+</main>
+  
+
+	
+          </form>
+</ion-content>

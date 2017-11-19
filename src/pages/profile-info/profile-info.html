@@ -1,0 +1,45 @@
+
+<ion-header class="header_title">
+
+		<div class="container">
+				  <div class="back_btn">
+					  <a href="#" (click)="back()"><img src="../../assets/images/svg/left-arrow-angle.svg" style="width:20px;height:20px;margin-left:40px;color: white;"/></a>
+				  </div>
+				  <div class="page_title text-center" >
+					  <h3 style=" font-size: 19px;">Profile</h3>
+				  </div>
+
+			  </div>
+
+	</ion-header>
+
+
+  <ion-content>
+    <main class="page">
+      <!-- [ng-style]="{'background-image':'url('+ cover +')'}"  -->
+      <!-- style="background: url(../images/menu_bg.jpg) no-repeat" -->
+    <div class="user_cover" [ngStyle]="{'background-image': 'url('+ cover +')' }"   >
+      <div class="friend-cover flex-v-center flex-h-center">
+        <img src={{img}} alt="">
+        <h3 class="btn btn-theme btn-xs">{{name}}</h3>
+
+      </div>
+    </div>
+    <div class="contact-options flex-h-center mt-20">
+      <p style="width: 80%;text-align:center; font-weight: 600;">{{status}}</p>
+      <a href="#" class="c-option flex-v-center flex-h-center">
+        <i class="fa fa-phone"></i> <span (click)="VoiceCall()">Voice Call</span>
+      </a>
+      <a href="#" class="c-option flex-v-center flex-h-center">
+        <i class="fa fa-envelope"></i> <span (click)="SendMessage()" >Send Message</span>
+      </a>
+      <a href="#" class="c-option flex-v-center flex-h-center">
+        <i class="fa fa-video-camera"></i> <span (click)="VideoCall()">Video Call</span>
+      </a>
+      <a href="#" class="c-option flex-v-center flex-h-center">
+        <i class="fa fa-ban"></i> <span (click)="Block(Friend_Id)">Block Friend</span>
+      </a>
+    </div>
+
+  </main>
+</ion-content>

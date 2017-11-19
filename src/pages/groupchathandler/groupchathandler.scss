@@ -1,0 +1,62 @@
+page-groupchathandler {
+
+.scroll-content {
+
+    margin-top: 4px !important ; 
+}
+.page {
+    background-color: #EEE !important ; 
+}
+ion-icon {
+    font-size : 31px  ; 
+}
+.toolbar-md {
+    padding: 0px !important; 
+    min-height: 0px !important; 
+}
+ion-header {
+    background-color: blue !important;
+    }
+.toolbar-background-md {
+    border-color: #5c0632  !important;;
+    background: #5c0632  !important;;
+}
+.title {
+    width: 90%;
+    text-align: center;
+}  
+.toolbar-title-md  {
+    color: #fff !important;
+    height: 30px!important;
+    line-height: 69px!important;
+    overflow: visible!important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 30px;
+}
+.headerico {
+float: right;
+    color: #fff;
+    margin-top: -11px;
+    margin-right: 15px;
+    margin-bottom: 18px;
+    width: 30px;
+    height: 30px;
+    background: #fff;
+    color: #5c0632;
+    box-shadow: 0 0 2px #fff;
+    font-size: 24px;
+    text-align: center;
+    border-radius: 50%;
+    line-height: 30px;
+}
+ion-footer {
+
+    
+    position: fixed !important ;
+
+}
+
+
+}

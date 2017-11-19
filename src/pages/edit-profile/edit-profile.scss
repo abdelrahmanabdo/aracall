@@ -1,0 +1,55 @@
+page-edit-profile {
+    .toolbar-background-md {
+
+          background: #5c0632;
+
+      }
+      .toolbar-title-md {
+
+          color: #ffffff;
+      }
+      .toolbar-title-md{
+        font-size: 1.5rem !important;
+
+      }
+}
+
+            //alert('Executed SQL')
+          //   this.db.executeSql('DELETE from Chat_Messagess', {}).then(() => {
+
+          //    alert('TABLE data deleted');
+          //  }, (err:any) => {
+          //   alert('Unable to execute sql: ');
+          //  });
+
+           //data insert section
+
+
+
+        //    this.db.executeSql('select * from Chat_Messagess', {}).then((data) => {
+
+
+
+        //  //    alert(data.rows.length);
+        //      if(data.rows.length > 0) {
+        //      for(var i = 0; i < data.rows.length; i++) {
+
+        //      // this.items.push(data);
+        //       this.msgs.push({
+        //        "id": data.rows.item(i).id,
+        //        "time": data.rows.item(i).time,
+        //        "text": data.rows.item(i).text,
+        //    });
+
+        //      }
+        //      localStorage.setItem("msgs",this.msgs)
+        //       this.msgs=  this.items
+
+        //      }
+
+        //      }, (err) => {
+        //      alert('Unable to execute sql: '+JSON.stringify(err));
+        //      });
+
+
+    //   this.getmessages()
